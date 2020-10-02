@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.lucaslouca.util.LLDirectedGraphTest" tests="30" skipped="0" failures="0" errors="0" timestamp="2020-09-30T05:32:50" hostname="TIGER-GOOGLE" time="0.024">
+  <properties/>
+  <testcase name="testShortestPathBetween1" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.001"/>
+  <testcase name="testShortestPathBetween2" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testShortestPathBetween3" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.001"/>
+  <testcase name="testShortestPathBetween4" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testAddEdge1" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.001"/>
+  <testcase name="testAddNode1" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testCountRoutesWithMaxHops1" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testCountRoutesWithMaxHops2" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testCountRoutesWithMaxHops3" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testCountRoutesWithMaxHops4" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testCountRoutesWithMaxHops5" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testDistance1" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testDistance2" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testDistance3" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.001"/>
+  <testcase name="testDistance4" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testCountRoutesWithMaxDistanceExcpetion" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.001"/>
+  <testcase name="testCountRoutesWithMaxHopsException" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testDistanceException1" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.001"/>
+  <testcase name="testCountRoutesWithHopsException" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testCountRoutesWithHops1" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testCountRoutesWithHops2" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testCountRoutesWithHops3" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.001"/>
+  <testcase name="testCountRoutesWithHops4" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testCountRoutesWithMaxDistance1" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testCountRoutesWithMaxDistance2" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testCountRoutesWithMaxDistance3" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testCountRoutesWithMaxDistance4" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testCountRoutesWithMaxDistance5" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testGetNeighBours1" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <testcase name="testGetNeighBours2" classname="com.lucaslouca.util.LLDirectedGraphTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
