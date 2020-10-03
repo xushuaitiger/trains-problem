@@ -28,7 +28,7 @@ public class Offer11 {
      * @param numbers
      * @return
      */
-    public int ｍｙＭinArray(int[] numbers) {
+    public int myＭinArray(int[] numbers) {
        int minimum = numbers[0];
        for(int i=0;i<numbers.length;i++){
            if(minimum>numbers[i]){
@@ -36,5 +36,33 @@ public class Offer11 {
            }
        }
        return minimum;
+    }
+
+    /**
+     * 最优解
+     *
+     * @param numbers
+     * @return
+     */
+    public static int minArray(int[] numbers) {
+        int left = 0;
+        int right = numbers.length - 1;
+        while (left < right) {
+            int mid = (right + left) / 2;
+            if (numbers[mid] < numbers[right]) {
+                right = mid;
+            } else if (numbers[mid] > numbers[right]) {
+                left = mid + 1;
+            } else {
+                right --;
+            }
+        }
+        return numbers[left];
+    }
+
+    public static void main(String[] args){
+        int[] source = new int[]{1,2,3,6,7};
+        int[] test = new int[]{3,6,7,1,2};
+        System.out.println("haha:"+minArray(test));
     }
 }
