@@ -22,7 +22,7 @@ public class LLPropertyFactory {
             properties.clear();
 
             Locale defaultLocale = Locale.getDefault();
-            ResourceBundle props = ResourceBundle.getBundle("com.lucaslouca.trains", defaultLocale);
+            ResourceBundle props = ResourceBundle.getBundle("com.tiger.trains", defaultLocale);
 
             for (Object key : props.keySet()) {
                 String keyStr = key.toString();
