@@ -4,10 +4,7 @@ import com.tiger.offer.arrayAndString.Offer29;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.util.Locale;
-
 import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
 
 public class Offer29Test {
     private static Offer29 offer29;
