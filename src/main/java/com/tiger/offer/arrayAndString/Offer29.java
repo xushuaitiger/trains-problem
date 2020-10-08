@@ -39,29 +39,33 @@ public class Offer29 {
         int[] res = new int[(right + 1) * (bottom + 1)];
         while (true) {
             //左右
-            for (int i = left; i <= right; i++) res[x++] = matrix[top][i];
+            for (int i = left; i <= right; i++) {
+                res[x++] = matrix[top][i];
+            }
 
             if (++top > bottom) break;
 
             //上下
-            for (int i = top; i <= bottom; i++) res[x++] = matrix[i][right];
+            for (int i = top; i <= bottom; i++) {
+                res[x++] = matrix[i][right];
+            }
 
             if (left > --right) break;
 
             //右左
-            for (int i = right; i >= left; i--) res[x++] = matrix[bottom][i];
+            for (int i = right; i >= left; i--) {
+                res[x++] = matrix[bottom][i];
+            }
 
             if (top > --bottom) break;
 
             //下上
-            for (int i = bottom; i >= top; i--) res[x++] = matrix[i][left];
+            for (int i = bottom; i >= top; i--) {
+                res[x++] = matrix[i][left];
+            }
 
             if (++left > right) break;
         }
         return res;
     }
-
-
-
-
 }
