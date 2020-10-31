@@ -1,6 +1,6 @@
 package com.tiger.offer2.arrayandlinkedlist;
 
-public class reverseKGroup {
+public class ReverseKGroup {
 
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode dummy = new ListNode(0);

@@ -1,6 +1,6 @@
 package com.tiger.offer2.arrayandlinkedlist;
 
-public class reverseLinkedList {
+public class ReverseLinkedList {
     private ListNode reverse(ListNode head) {
         //每次遍历用到的上一个节点
         ListNode pre = null;
@@ -30,7 +30,7 @@ public class reverseLinkedList {
     public static void main(String[] args) {
         ListNode node2 = new ListNode(2, new ListNode(3, null));
         ListNode head = new ListNode(1, node2);
-        new reverseLinkedList().reverse(head);
+        new ReverseLinkedList().reverse(head);
     }
 
     public static class ListNode {
