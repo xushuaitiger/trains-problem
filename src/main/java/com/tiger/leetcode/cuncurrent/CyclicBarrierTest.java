@@ -17,6 +17,7 @@ public class CyclicBarrierTest {
                 Thread.sleep(1000);
                 System.out.println(getName() + " 去读文件操作。。。");
                 barrier.await(); //等待所有线程到达栅栏后执行下面代码
+                System.out.println("xxx");
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -33,9 +34,10 @@ public class CyclicBarrierTest {
         @Override
         public void run() {
             try {
-                Thread.sleep(5000);
+                Thread.sleep(1000);
                 System.out.println(getName() + " 去写文件操作。。。");
                 barrier.await();//等待所有线程到达栅栏后执行下面代码
+                System.out.println("yyy");
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -52,7 +54,8 @@ public class CyclicBarrierTest {
 
             @Override
             public void run() {
-                System.out.println(Thread.currentThread().getName() + " 完成最后任务");
+                System.out.println(Thread.currentThread().getName() +
+                        " 完成最后任务");
             }
         });
 

@@ -1,4 +1,4 @@
-package com.tiger.offer2.arrayandlinkedlist;
+package com.tiger.offer2.treeandgraph;
 
 public class TreeNode {
 

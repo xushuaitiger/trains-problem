@@ -1,4 +1,4 @@
-package com.tiger.offer2.arrayandlinkedlist;
+package com.tiger.offer2.treeandgraph;
 
 
 import java.util.ArrayList;
@@ -22,8 +22,8 @@ public class SerializeTreeNodeDFS {
             return s;
         }
         s += root.val+",";
-        s = serializeHelper(root.left, s);
-        s = serializeHelper(root.right, s);
+        s +=serializeHelper(root.left, s);
+        s +=serializeHelper(root.right, s);
         return s;
     }
 
@@ -50,9 +50,16 @@ public class SerializeTreeNodeDFS {
     }
 
     public static void main(String[] args) {
-        String s = new SerializeTreeNodeDFS().serialize(TreeNodeTestCase.A);
+        String s = new SerializeTreeNodeDFS().serialize(TreeNodeTestCase.B);
         System.out.println(s);
         new SerializeTreeNodeDFS().deSerializer(s);
+        //String s = "";
+        //testString(s);
+        //System.out.println("haha:"+s);
+    }
+
+    public static void testString(String s){
+        s +="null,";
     }
 }
 

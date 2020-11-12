@@ -1,7 +1,7 @@
-package com.tiger.offer2.arrayandlinkedlist;
+package com.tiger.offer2.treeandgraph;
 
 /**
- *
+ * delete node of binary tree which equals an given number key
  */
 public class 删除二叉搜索树节点 {
     public TreeNode deleteNode(TreeNode root, int key) {

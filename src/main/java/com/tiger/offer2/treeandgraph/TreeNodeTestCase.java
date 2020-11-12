@@ -1,8 +1,11 @@
-package com.tiger.offer2.arrayandlinkedlist;
+package com.tiger.offer2.treeandgraph;
 
 public class TreeNodeTestCase {
 
     public static TreeNode A = new TreeNode(1);
+
+    public static TreeNode B = new TreeNode(1);
+
     static {
         TreeNode treeNode2 = new TreeNode(2);
         TreeNode treeNode3 = new TreeNode(3);
@@ -22,6 +25,7 @@ public class TreeNodeTestCase {
         treeNode3.right = treeNode7;
         treeNode4.left = treeNode8;
         treeNode4.right = treeNode9;
-
+        B.right = new TreeNode(3);
+        B.left = new TreeNode(2);
     }
 }
