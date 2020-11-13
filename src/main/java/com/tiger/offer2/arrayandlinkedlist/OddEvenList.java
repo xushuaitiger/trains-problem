@@ -2,6 +2,7 @@ package com.tiger.offer2.arrayandlinkedlist;
 
 public class OddEvenList {
 
+
     public ListNode oddEvenList(ListNode head) {
        if(head ==null){
            return null;
