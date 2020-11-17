@@ -37,15 +37,25 @@ public class Offer17 {
      * @return
      */
     public int[] printNumbers(int n) {
-        int sum = 1;
-        for (int i = 0; i < n; i++) {
-            sum *= 10;
+        if (n<=0) System.out.println(0);
+        int temp = 10;
+        while(n>0){
+            temp *=10;
+            n--;
         }
-        int[] res = new int[sum - 1];
-        for(int i = 0; i < sum - 1; i++){
-            res[i] = i + 1;
+        --temp;
+        int[] result = new int[temp];
+        for(int i=1;i<=temp;i++){
+            result[i-1] = i;
         }
-        return res;
+        return result;
     }
 
+    public  static void main(String[] args){
+        int[] s = new Offer17().printNumbers(2);
+        for(int i=0;i<s.length;i++){
+            System.out.println(s[i]);
+        }
+
+    }
 }

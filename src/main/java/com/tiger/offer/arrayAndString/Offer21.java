@@ -85,5 +85,9 @@ public class Offer21 {
         return nums;
     }
 
+    public static void main(String[] args){
+        int[] s = new int[]{1,3,2,5,6,8,9};
+        new Offer21().exchange(s);
+    }
 
 }

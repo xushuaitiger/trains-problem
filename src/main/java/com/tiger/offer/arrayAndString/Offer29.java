@@ -31,41 +31,34 @@ public class Offer29 {
      * @return
      */
     public int[] spiralOrder(int[][] matrix) {
-
-        if (matrix.length == 0) return new int[0];
-        int left = 0, right = matrix[0].length - 1, top = 0,
-                bottom = matrix.length - 1, x = 0;
-
+        if(matrix.length == 0) return new int[0];
+        int left = 0, right = matrix[0].length - 1, top = 0, bottom = matrix.length - 1, x = 0;
         int[] res = new int[(right + 1) * (bottom + 1)];
-        while (true) {
-            //左右
-            for (int i = left; i <= right; i++) {
-                res[x++] = matrix[top][i];
-            }
+        while(true) {
+            for(int i = left; i <= right; i++) res[x++] = matrix[top][i];
+            if(++top > bottom) break;
 
-            if (++top > bottom) break;
+            for(int i = top; i <= bottom; i++) res[x++] = matrix[i][right];
+            if(left > --right) break;
 
-            //上下
-            for (int i = top; i <= bottom; i++) {
-                res[x++] = matrix[i][right];
-            }
+            for(int i = right; i >= left; i--) res[x++] = matrix[bottom][i];
+            if(top > --bottom) break;
 
-            if (left > --right) break;
-
-            //右左
-            for (int i = right; i >= left; i--) {
-                res[x++] = matrix[bottom][i];
-            }
-
-            if (top > --bottom) break;
-
-            //下上
-            for (int i = bottom; i >= top; i--) {
-                res[x++] = matrix[i][left];
-            }
-
-            if (++left > right) break;
+            for(int i = bottom; i >= top; i--) res[x++] = matrix[i][left];
+            if(++left > right) break;
         }
         return res;
+
+    }
+
+
+
+    public static void main(String[] args){
+        /**  1,2,3,4,5
+         *   2,3,4,5,6
+         *   7,8,9,10,11
+         */
+        int[][] s = new int[][]{{1,2,3},{4,5,6},{7,8,9}};
+        new Offer29().spiralOrder(s);
     }
 }

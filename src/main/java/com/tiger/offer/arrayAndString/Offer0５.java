@@ -36,12 +36,12 @@ package com.tiger.offer.arrayAndString;
 public class Offer0５ {
 
     public String replaceSpace(String s) {
+        if(s ==null || s.length()<1) return "";
+        char[] chars = s.toCharArray();
         StringBuilder sb = new StringBuilder();
-        char[] arrays = s.toCharArray();
-        for (char c : arrays) {
-            if (c == ' ') {
-                sb.append("%20");
-            } else {
+        for(char c:chars){
+            if(c ==' ') sb.append("%20");
+            else{
                 sb.append(c);
             }
         }
