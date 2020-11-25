@@ -7,20 +7,22 @@ import java.util.List;
 public class 二叉树的序列化与反序列化深度优先 {
     // 序列化
     public String serialize(TreeNode root) {
-        return serializeHelper(root, "");
+        String s =  serializeHelper(root, "");
+        return s.substring(0,s.length()-1);
     }
+
     private String serializeHelper(TreeNode root, String str) {
-        // 递归处理
-        if (root == null) {
-            str += "null,";
-        } else {
-            // 前序遍历
-            str += str.valueOf(root.val) + ",";
-            str = serializeHelper(root.left, str);
-            str = serializeHelper(root.right, str);
+        //递归出口条件
+        if(root == null) {
+            str +="null,";
+            return str;
         }
+        str +=root.val+",";//前序遍历
+        str = serializeHelper(root.left,str);//递归左子树
+        str = serializeHelper(root.right,str);//递归右子树
         return str;
     }
+
     //反序列化
     public TreeNode deserialize(String data) {
         String[] data_array = data.split(",");
@@ -42,6 +44,11 @@ public class 二叉树的序列化与反序列化深度优先 {
         root.right = deserializeHelper(l);
 
         return root;
+    }
+
+    public static void main(String[] args) {
+        TreeNode test = TreeNodeTestCase.A;
+        System.out.println(new 二叉树的序列化与反序列化深度优先().serialize(test));
     }
 }
 

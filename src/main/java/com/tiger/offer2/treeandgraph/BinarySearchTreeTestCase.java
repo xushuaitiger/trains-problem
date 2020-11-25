@@ -9,7 +9,8 @@ package com.tiger.offer2.treeandgraph;
  *                 */
 public class BinarySearchTreeTestCase {
     public static TreeNode BINARY_SEARCH = new TreeNode(56);
-    static{
+
+    static {
         TreeNode treeNode23 = new TreeNode(23);
         TreeNode treeNode12 = new TreeNode(12);
         TreeNode treeNode54 = new TreeNode(54);
@@ -28,5 +29,19 @@ public class BinarySearchTreeTestCase {
         treeNode98.left = treeNode67;
         treeNode98.right = treeNode99;
 
+    }
+
+    /**
+     * 2
+     * /   \
+     * 1    3
+     */
+    public static TreeNode BINARY_SEARCH_TWO = new TreeNode(2);
+
+    static {
+        TreeNode node1 = new TreeNode(1);
+        TreeNode node3 = new TreeNode(3);
+        BINARY_SEARCH_TWO.left=node1;
+        BINARY_SEARCH_TWO.right = node3;
     }
 }
