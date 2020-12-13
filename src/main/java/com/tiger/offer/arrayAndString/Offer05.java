@@ -33,9 +33,10 @@ package com.tiger.offer.arrayAndString;
 来源：力扣（LeetCode）
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
  */
-public class Offer0５ {
+public class Offer05 {
 
     public String replaceSpace(String s) {
+
         if(s ==null || s.length()<1) return "";
         char[] chars = s.toCharArray();
         StringBuilder sb = new StringBuilder();
