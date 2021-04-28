@@ -15,6 +15,7 @@ public class CyclicBarrierTest {
         public void run() {
             try {
                 Thread.sleep(1000);
+                Thread.currentThread().setName("xushuaihu1");
                 System.out.println(getName() + " 去读文件操作。。。");
                 barrier.await(); //等待所有线程到达栅栏后执行下面代码
                 System.out.println("xxx");
@@ -34,9 +35,11 @@ public class CyclicBarrierTest {
         @Override
         public void run() {
             try {
+                Thread.currentThread().setName("xushuaihu2");
                 Thread.sleep(1000);
                 System.out.println(getName() + " 去写文件操作。。。");
                 barrier.await();//等待所有线程到达栅栏后执行下面代码
+                Thread.sleep(1500);
                 System.out.println("yyy");
             } catch (Exception e) {
                 e.printStackTrace();
@@ -49,6 +52,7 @@ public class CyclicBarrierTest {
     public static void main(String[] args) {
         //定义线程数2
         int threadNum = 2;
+
         //根据线程数实例化 栅栏
         CyclicBarrier barrier = new CyclicBarrier(threadNum, new Runnable() {
 
