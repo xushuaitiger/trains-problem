@@ -5,7 +5,7 @@ import com.tiger.service.LLRailRoadService;
 /**
  * {@code Abstract} class defining an {@code LLCommand} related to the {@code LLRailRoadService} functionality.
  */
-public abstract class LLAbstractRailRoadServiceCommand implements LLCommand  {
+public abstract class LLAbstractRailRoadServiceCommand implements LLCommand {
     private LLRailRoadService receiver;
 
     /**
@@ -13,7 +13,7 @@ public abstract class LLAbstractRailRoadServiceCommand implements LLCommand  {
      *
      * @param service receiver which will be called from this command.
      */
-    public LLAbstractRailRoadServiceCommand(LLRailRoadService service){
+    public LLAbstractRailRoadServiceCommand(LLRailRoadService service) {
         this.receiver = service;
     }
 
