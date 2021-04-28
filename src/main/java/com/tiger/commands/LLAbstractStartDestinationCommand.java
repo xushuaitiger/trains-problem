@@ -9,6 +9,7 @@ import com.tiger.service.LLRailRoadService;
 public abstract class LLAbstractStartDestinationCommand extends LLAbstractRailRoadServiceCommand {
     protected String start;
     protected String dest;
+    protected String dsd;
 
     /**
      * Create a new command.
